@@ -1,4 +1,4 @@
-``Sistema de Gerenciamento de Vendas``
+Sistema de Gerenciamento de Vendas
 
 Passos para instalação:
 
