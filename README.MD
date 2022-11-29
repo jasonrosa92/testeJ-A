@@ -1,3 +1,5 @@
+``Sistema de Gerenciamento de Vendas``
+
 Passos para instalação:
 
 1 - Instalar as dependências:
@@ -15,4 +17,4 @@ Passos para instalação:
 ``` python manage.py createsuperuser```
 
 6 - Teste a aplicação rodando o seguinte comando:
-````python manage.py runserver```
+```python manage.py runserver```
