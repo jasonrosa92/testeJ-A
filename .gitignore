@@ -1,9 +1,11 @@
 migrations/
+ArquivosXML/
 arquivos/
 setup.py
 jea/configs/configs.py
 jea/media/imagens/usuarios/
-.env
 .venv/
+venv
 *.sqlite3
+.env
 env/
