@@ -1,11 +1,27 @@
+# Visual Studio Code # 
+.vscode/* 
+!.vscode/settings.json 
+!.vscode/tasks.json 
+!.vscode/launch.json 
+!.vscode/extensions.json 
+.history
+
 migrations/
 ArquivosXML/
 arquivos/
 setup.py
 jea/configs/configs.py
 jea/media/imagens/usuarios/
-.venv/
-venv
+
+# Environments 
+.env 
+.venv 
+env/ 
+venv/ 
+ENV/ 
+env.bak/ 
+venv.bak/ 
 *.sqlite3
+# dotenv
 .env
 env/
