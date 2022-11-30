@@ -25,7 +25,7 @@
           <form role="form" action="" method="post">
             {% csrf_token %}
             
-            {% include 'vendas/pagamento/condicao_pagamento_form.html' %}
+            {% include 'estoque/movimento/movimento_estoque_form.html' %}
 
           </form>
 
@@ -40,9 +40,7 @@
 {%endblock%}
 
 {% block js %}
-  
-  {% include 'base/load_jqueryui.html' %}
     
-  {% include 'base/tooltip_js.html' %}
+  {% include 'estoque/movimento/movimento_estoque_jsblock.html' %}
   
 {% endblock %}

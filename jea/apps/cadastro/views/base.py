@@ -23,9 +23,6 @@ class AdicionarPessoaView(CustomCreateView):
         endereco_form = EnderecoFormSet(prefix='endereco_form')
         endereco_form.can_delete = False
 
-        banco_form = BancoFormSet(prefix='banco_form')
-        banco_form.can_delete = False
-
         documento_form = DocumentoFormSet(prefix='documento_form')
         documento_form.can_delete = False
 
@@ -41,7 +38,6 @@ class AdicionarPessoaView(CustomCreateView):
                                                              pessoa_juridica_form=pessoa_juridica_form,
                                                              pessoa_fisica_form=pessoa_fisica_form,
                                                              endereco_form=endereco_form,
-                                                             banco_form=banco_form,
                                                              documento_form=documento_form,
                                                              formsets=formsets,
                                                              veiculo_form=veiculo_form))
@@ -53,7 +49,6 @@ class AdicionarPessoaView(CustomCreateView):
         veiculo_form = kwargs.pop('veiculo_form', None)
 
         endereco_form = EnderecoFormSet(request.POST, prefix='endereco_form')
-        banco_form = BancoFormSet(request.POST, prefix='banco_form')
         documento_form = DocumentoFormSet(
             request.POST, prefix='documento_form')
 
@@ -79,7 +74,6 @@ class AdicionarPessoaView(CustomCreateView):
             if (all(formset.is_valid() for formset in formsets) and
                 pessoa_form.is_valid() and
                 endereco_form.is_valid() and
-                banco_form.is_valid() and
                 documento_form.is_valid() and
                     all(extra_form.is_valid() for extra_form in extra_forms)):
 

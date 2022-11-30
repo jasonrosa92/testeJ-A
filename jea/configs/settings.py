@@ -1,7 +1,7 @@
 import os
 from decouple import config, Csv
 from dj_database_url import parse as dburl
-from .configs import DEFAULT_DATABASE_URL, DEFAULT_FROM_EMAIL, EMAIL_HOST, EMAIL_HOST_USER, EMAIL_HOST_PASSWORD, EMAIL_PORT, EMAIL_USE_TLS
+from jea.configs.configs import DEFAULT_DATABASE_URL, DEFAULT_FROM_EMAIL, EMAIL_HOST, EMAIL_HOST_USER, EMAIL_HOST_PASSWORD, EMAIL_PORT, EMAIL_USE_TLS
 from pathlib import Path
 
 
@@ -62,7 +62,7 @@ ROOT_URLCONF = 'jea.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(APP_ROOT, 'templates'), ],
+        'DIRS': [os.path.join(APP_ROOT, 'templates/'), ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

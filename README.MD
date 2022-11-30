@@ -18,3 +18,4 @@ Passos para instalação:
 
 6 - Teste a aplicação rodando o seguinte comando:
 ```python manage.py runserver```
+

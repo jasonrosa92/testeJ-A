@@ -40,18 +40,6 @@
       </div>
     </div>
   
-     <div class="col-sm-6">
-        <div class="form-group">
-          <label>{{form.fornecedor.label}}</label>
-          {% if form.fornecedor.errors %}<label class="error">{% for error in form.fornecedor.errors %}{{error}}{% endfor %}</label>{% endif %}
-          <div class="input-group" style="margin-bottom: 0px;">
-            <div class="form-line">
-              {{form.fornecedor}}
-            </div>
-            <a class="input-group-addon newwindow" style="color: green;" title="Adicionar fornecedor" href="{% url 'cadastro:addfornecedorview' %}"><i class="material-icons add-new-icon" title="Adicionar fornecedor">&#xE147;</i></a>
-          </div>
-        </div>
-      </div>
   
       <div class="col-sm-6">
         <div class="form-group">
